@@ -9,13 +9,21 @@ USE AT YOUR OWN RISK.
 
 * Installation
 
-The script does not currently clone each project for you. Before executing emacs.SlackBuild,
-cd into this proj directory and clone el-get, elpa, emacs-git, and org-mode. If emacs repo
-default folder name isn't "emacs-git", change it to that. I intend to fix all this soon,
-I just haven't gotten around to it. However, these values in the script are easily modified.
+The script does not currently clone each project for you - but it will perform a pull before comiling. Prior to executing **emacs.SlackBuild**,
+cd into this proj directory and clone el-get, elpa, emacs-git, and org-mode. 
+
+That is,
+
+$ cd /path/to/Emacs-git-for-Slackware
+$ git clone url/for/el-get_git_repo.git>
+$ ... etc, etc
 
 
-As reference, my current folder layout is as so:
+If the emacs repo default folder name isn't "emacs-git", change it to that. I intend to fix all this soon; I just haven't gotten around to it. 
+However, these values in the script are easily modified.
+
+
+For reference, my current folder layout is as so:
 
 Emacs-git-Slack
 |
@@ -49,3 +57,5 @@ https://orgmode.org/worg/dev/index.html
 ** Caveat
 
 You'll have to explicitly accept the ELPA copyright agreement.
+
+
