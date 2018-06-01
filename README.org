@@ -6,7 +6,6 @@ The package versioning is extract from the Emacs git Master branch. Note that em
 
 USE AT YOUR OWN RISK. 
 
-
 * Installation
 
 The script does not currently clone each project for you - but it will perform a pull before comiling. Prior to executing **emacs.SlackBuild**,
@@ -53,9 +52,17 @@ https://github.com/dimitri/el-get/
 Instructions to clone Org-Mode:
 https://orgmode.org/worg/dev/index.html
 
+** Caveats
 
-** Caveat
+You'll have to explicitly accept the ELPA copyright agreement. Visit GNU.org for more.
 
-You'll have to explicitly accept the ELPA copyright agreement.
+* Upgrading Package
 
+Use the upgradepkg command to update emacs-git. Command use: 
+# upgradepkg oldpackge%newpackage.tgz  
+
+For example if the current installation package is named "emacs-26.0.90-1262-x86_64-1_1kito", then the upgrade can be completed by typing the following:
+# upgradepkg emacs-26.0.90-1262-x86_64-1_1kito%emacs-26.1-x86_64-1_1kito.txz
+Wild Cards also work:
+# upgradepkg emacs26.0*%emacs-26.1-x86_64-1_1kito.txz
 
