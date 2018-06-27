@@ -11,47 +11,12 @@ to resonably ensure robustness. But ...
 USE AT YOUR OWN RISK. 
 
 * Installation
-
-*This script does not currently clone each project for you.*
-/Yet/. However, this script will sync your cloned repositories before compiling.
-
-
-
-Therefore, prior to executing **emacs.SlackBuild**, ensure el-get, elpa, emacs-git, and
-org-mode repositories are cloned within this directory.
-
-For example the first time you compile Emacs do the following,
-
-$ cd /path/to/Emacs-git-for-Slackware
-$ git clone http://git.savannah.gnu.org/cgit/emacs/elpa.git
-$ cd elpa
-accept agreement
-$ ../
-$ git clone https://github.com/dimitri/el-get/ 
-$ git clone <etc, etc>
-...
-# ./emacs.SlackBuild
-# installpkg /tmp/emacs[version reported after compiling].txz
-
-If the emacs repo default folder name isn't "emacs-git", change it to
-that. I intend to fix all this soon; this is stilla work in progress.
-However, the script parameters are easily modified. Feel free to contribute to the project.
-
-
-For reference, my current folder layout is as so:
-
-Emacs-git-Slack
-|
-|------> README.org
-|------> el-get  
-|------> elpa
-|------> emacs-git
-|------> emacs.SlackBuild
-|------> org-mode
+Execute the slackbuild.
+Note that elpa, el-get and org-mode folders are to be stored in the /usr/share/emacs/lisp/ directory after installation.
 
 * Other Repositories
-Emacs and ELPA are official [[https://www.gnu.org/software/][GNU]] software. el-get is not supported by
-the emacs team.
+Emacs and ELPA are official [[https://www.gnu.org/software/][GNU]] software. Note that el-get, MELPA and marmalade 
+is not supported by the emacs team.
 
 Emacs repo:
 https://git.savannah.gnu.org/git/emacs.git
@@ -68,19 +33,3 @@ https://github.com/dimitri/el-get/
 
 Instructions to clone Org-Mode:
 https://orgmode.org/worg/dev/index.html
-
-** Caveats
-
-You'll have to explicitly accept the ELPA copyright agreement. Visit
-GNU.org and view the relevant page on ELPA for documentation.
-
-* Upgrading Emacs
-
-Use the upgradepkg command to update emacs-git. Command use: 
-# upgradepkg oldpackge%newpackage.tgz  
-
-For example if the current installation package is named "emacs-26.0.90-1262-x86_64-1_1kito", then the upgrade can be completed by typing the following:
-# upgradepkg emacs-26.0.90-1262-x86_64-1_1kito%emacs-26.1-x86_64-1_1kito.txz
-Wild Cards also work:
-# upgradepkg emacs26.0*%emacs-26.1-x86_64-1_1kito.txz
-

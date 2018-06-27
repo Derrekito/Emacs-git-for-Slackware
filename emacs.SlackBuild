@@ -79,7 +79,7 @@ cd $CWD/elpa || exit 1
 git pull
 cd $CWD/el-get || exit 1
 git pull
-cd $CWD/org-mode || exit 1
+cd $CWD/org || exit 1
 git pull
 
 
