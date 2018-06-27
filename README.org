@@ -15,8 +15,7 @@ Execute the slackbuild.
 Note that elpa, el-get and org-mode folders are to be stored in the /usr/share/emacs/lisp/ directory after installation.
 
 * Other Repositories
-Emacs and ELPA are official [[https://www.gnu.org/software/][GNU]] software. Note that el-get, MELPA and marmalade 
-is not supported by the emacs team.
+Emacs and ELPA are official [[https://www.gnu.org/software/][GNU]] software. Note that el-get is not supported by the emacs team.
 
 Emacs repo:
 https://git.savannah.gnu.org/git/emacs.git
