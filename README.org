@@ -26,4 +26,6 @@ el-get can be found at:
 https://github.com/dimitri/el-get/
 
 Instructions to clone Org-Mode:
-https://orgmode.org/worg/dev/index.html
+Org-Mode can be cloned from  
+git clone https://code.orgmode.org/bzg/org-mode.git  
+reference: https://orgmode.org/worg/dev/index.html
