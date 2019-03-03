@@ -1,6 +1,6 @@
 * Overview
 
-This script if a modification to [alienbob](https://github.com/alienbob) 's Emacs SlackBuild. It allows the
+This script if a modification to [[https://github.com/alienbob][alienbob]]'s Emacs SlackBuild. It allows the
 user to create a Slackware package from emacs, elpa, el-get, and org-mode git repositories.  The package versioning is extracted from the Emacs git Master branch. Note that emacs version numbers may
 also roll back and forth; however, this does not appear to affect
 the use of *upgradepkg*. 
